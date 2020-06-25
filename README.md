@@ -1,5 +1,31 @@
 # `Postgresql` database basic operations
 
+#### How to install PostgreSQL on a Mac with Homebrew and Lunchy?
+`$ brew update`
+`$ brew doctor`
+
+#### Install Postgres
+`$ brew install postgresql`
+
+#### Create/Upgrade a database
+`$ initdb /usr/local/var/postgres -E utf8`
+
+#### Install Lunchy
+`$ gem install lunchy`
+
+#### Start/Stop Postgres
+`$ mkdir -p ~/Library/LaunchAgents` 
+`$ cp /usr/local/Cellar/postgresql/9.2.1/homebrew.mxcl.postgresql.plist ~/Library/LaunchAgents/`
+
+Since we're using Lunchy, we don't need to run this third command:
+`$ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist`
+
+Instead, we'll simply use this to start Postgres:
+`$ lunchy start postgres`
+
+To stop Postgres:
+`$ lunchy stop postgres`
+
 ### How to access postgrad shell?
 `psql postgres`
 
