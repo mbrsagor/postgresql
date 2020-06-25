@@ -35,3 +35,9 @@ Open your terminal then run the command
 `` Export be simular ``
 `pg_restore -d db_name /path/dump_name.tar -c -U db_user`
 
+
+
+### How to use `postgress` database in `Django` web app?
+1) First you active your virtualenv
+then ```pip install django psycopg2```
+
