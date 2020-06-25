@@ -1,4 +1,4 @@
-# How to use `postgresql` database basic idea
+# `Postgresql` database basic operations
 
 ### How to access postgrad shell?
 `psql postgres`
@@ -14,5 +14,15 @@
 
 ### How to switch database?
 `\c db_name`
+
+
+### How to create `User`?
+`CREATE USER user_name;`
+
+### How to drop User?
+`DROP USER user_name;`
+
+### List of users.
+`\du`
 
 
