@@ -55,3 +55,9 @@ DATABASES = {
     }
 }
 ````
+
+#### create a database user which we will use to connect to and interact with the database.
+`CREATE USER mbrsagor WITH PASSWORD 'sagor123';`
+
+#### we need to do is give our database user access rights to the database we created:
+`GRANT ALL PRIVILEGES ON DATABASE my_db TO my_user;`
