@@ -26,3 +26,12 @@
 `\du`
 
 
+Many time we need to `import` or `export` database. In this `tutorial` I will show you how to `import` and `export` the postgress database.
+
+### Import database
+Open your terminal then run the command
+`psql -U db_user db_name < ~/Desktop/db/my_db.sql`
+
+`` Export be simular ``
+`pg_restore -d db_name /path/dump_name.tar -c -U db_user`
+
