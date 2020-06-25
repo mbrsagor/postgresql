@@ -1,2 +1,6 @@
-# How to use post `postgresql` basic idea
+# How to use `postgresql` database basic idea
+
+### How to access postgrad shell?
+#### `psql postgres`
+
 
