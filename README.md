@@ -41,3 +41,17 @@ Open your terminal then run the command
 1) First you active your virtualenv
 then ```pip install django psycopg2```
 
+2) Then configuration `Django setting.py` file look like this:
+
+````
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'my_db',
+        'USER': 'db_user',
+        'PASSWORD': '123',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+````
