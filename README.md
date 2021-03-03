@@ -41,7 +41,6 @@ To stop Postgres:
 ### How to switch database?
 `\c db_name`
 
-
 ### How to create `User`?
 `CREATE USER user_name;`
 
