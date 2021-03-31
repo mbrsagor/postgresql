@@ -1,3 +1,5 @@
+> Here, basic `Database` commoand line for all developer. I think it should need to know for every developer.
+
 # `Postgresql` database basic operations
 
 #### How to install PostgreSQL on a Mac with Homebrew and Lunchy?
@@ -117,4 +119,3 @@ VALUES('mbr', 'sagor', 'yes', date '2020-10-10', 'mbrsagor@gmail.com');
 
 ###### Select from `WHERE`.
 `SELECT FROM table_name WHERE table_field='value'; `
-
