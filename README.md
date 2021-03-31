@@ -70,7 +70,7 @@ then ```pip install django psycopg2```
 
 2) Then configuration `Django setting.py` file look like this:
 
-````
+````python
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
