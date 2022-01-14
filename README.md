@@ -37,6 +37,9 @@ To stop Postgres:
 ### List of Database.
 `\l`
 
+### How to change database password.
+`\password`
+
 ### How to drop database ?
 `DROP DATABASE db_name;`
 
