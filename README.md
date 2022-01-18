@@ -66,6 +66,11 @@ Open your terminal then run the command
 `pg_dump -U macair -h localhost mydb >> ~/Desktop/mydb.sql`
 Here `macair` means my database username.
 
+###### Install postgresql pip
+```bash
+pip install postgres
+```
+
 
 ### How to use `postgress` database in `Django` web app?
 1) First you active your virtualenv
@@ -76,7 +81,7 @@ then ```pip install django psycopg2```
 ````python
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql2',
         'NAME': 'my_db',
         'USER': 'db_user',
         'PASSWORD': '123',
