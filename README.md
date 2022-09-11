@@ -63,8 +63,8 @@ Open your terminal then run the command
 `psql -U db_user db_name < ~/Desktop/db/my_db.sql`
 
 ##### Export be simular 
-`pg_dump -U macair -h localhost mydb >> ~/Desktop/mydb.sql`
-Here `macair` means my database username.
+`pg_dump -U sagor -h localhost mydb >> ~/Desktop/mydb.sql`
+Here `sagor` means my database username.
 
 ###### Install postgresql pip
 ```bash
@@ -127,3 +127,20 @@ VALUES('mbr', 'sagor', 'yes', date '2020-10-10', 'mbrsagor@gmail.com');
 
 ###### Select from `WHERE`.
 `SELECT FROM table_name WHERE table_field='value'; `
+
+Start database:
+pg_ctl -D /opt/homebrew/var/postgres start
+
+Access database:
+sudo -u postgres psql
+
+
+DB backup:
+pg_dump -U sagor -h localhost dev >> dev.sql
+
+DB import:
+psql -h localhost -U postgres -d postdata -f D:\Backup\database.sql
+
+Download DB from Cloud
+scp -i sos.pem ubuntu@ip_address:~/dev.sql .
+
