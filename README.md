@@ -3,8 +3,10 @@
 # `Postgresql` database basic operations
 
 #### How to install PostgreSQL on a Mac with Homebrew and Lunchy?
-`$ brew update
-`$ brew doctor
+```bash
+$ brew update
+$ brew doctor
+```
 
 #### Install Postgres
 `$ brew install postgresql`
@@ -134,15 +136,21 @@ pg_ctl -D /opt/homebrew/var/postgres start
 ```
 
 Access database:
+```bash
 sudo -u postgres psql
-
+```
 
 DB backup:
+```bash
 pg_dump -U sagor -h localhost dev >> dev.sql
+```
 
 DB import:
+```bash
 psql -h localhost -U postgres -d postdata -f D:\Backup\database.sql
+```
 
 Download DB from Cloud
+```bash
 scp -i sos.pem ubuntu@ip_address:~/dev.sql .
-
+```
