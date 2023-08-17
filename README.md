@@ -152,5 +152,9 @@ psql -h localhost -U postgres -d postdata -f D:\Backup\database.sql
 
 Download DB from Cloud
 ```bash
-scp -i sos.pem ubuntu@ip_address:~/dev.sql .
+Download DB from Cloud
+```bash
+ssh -i website.pem ubuntu@ip_address
+pg_dump -u root -p website > /home/ubuntu/website.sql
+scp -i gds_staging.pem ubuntu@yip_address:~/website.sql .
 ```
