@@ -1,10 +1,10 @@
-> Here, basic `Database` commoand line for all developer. I think it should need to know for every developer.
+> Here, the basic `Database` command line for all developers. It should need to know for every developer.
 
 # `Postgresql` database basic operations
 
 #### How to install PostgreSQL on a Mac with Homebrew and Lunchy?
-`$ brew update`
-`$ brew doctor`
+`$ brew update
+`$ brew doctor
 
 #### Install Postgres
 `$ brew install postgresql`
@@ -129,7 +129,9 @@ VALUES('mbr', 'sagor', 'yes', date '2020-10-10', 'mbrsagor@gmail.com');
 `SELECT FROM table_name WHERE table_field='value'; `
 
 Start database:
+```bash
 pg_ctl -D /opt/homebrew/var/postgres start
+```
 
 Access database:
 sudo -u postgres psql
